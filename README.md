@@ -25,28 +25,30 @@ int input_len = strlen(input);
 int key_len = strlen(key);
 
 for (int i = 0; i < input_len; i++) {
-    input[i] = input[i] ^ key[i % key_len]; // XOR encryption
+    input[i] = input[i] ^ key[i % key_len];
 }
 }
 
 int main() {
-char url[] = "https://lms2.cse.saveetha.in";
-char key[] = "secretkey"; // Simple key for XOR encryption
+    printf("***** ADVANCED-ENCRYPTION-STANDARD-DES-ALGORITHM *****\n\n");
+    
+char url[] = "HEMANTH";
+char key[] = "secretkey"; 
 
-printf("Original URL: %s\n", url);
+printf("Original text: %s\n", url);
 
 xor_encrypt_decrypt(url, key);
-printf("Encrypted URL: %s\n", url);
+printf("Encrypted text: %s\n", url);
 
 xor_encrypt_decrypt(url, key);
-printf("Decrypted URL: %s\n", url);
+printf("Decrypted text: %s\n", url);
 
 return 0;
 }
 ```
 ## OUTPUT:
 
-![image](https://github.com/user-attachments/assets/794a4928-eb23-4c9d-a9de-deabcaf2126c)
+![image](https://github.com/user-attachments/assets/a29c756b-49d7-453f-b0f0-f27c21bd12ae)
 
 ## RESULT: 
 Hence,to use Advanced Encryption Standard (AES) Algorithm for a practical application like URL Encryption is done successfully.
