@@ -12,8 +12,8 @@
 ## PROGRAM: 
 
 ```
-## Name: R HEMANTH KUMAR
-## Register Number: 212223040065
+Name: R HEMANTH KUMAR
+Register Number: 212223040065
 ```
 ```
 #include <stdio.h>
