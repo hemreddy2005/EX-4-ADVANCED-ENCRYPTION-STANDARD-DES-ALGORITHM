@@ -1,14 +1,18 @@
 # EX-4-ADVANCED-ENCRYPTION-STANDARD-DES-ALGORITHM
 
 ## Aim:
-  To use Advanced Encryption Standard (AES) Algorithm for a practical application like URL Encryption.
+  The aim of this exercise is to understand and implement the Data Encryption Standard (DES) algorithm
 
 ## ALGORITHM: 
-  1. AES is based on a design principle known as a substitution–permutation. 
-  2. AES does not use a Feistel network like DES, it uses variant of Rijndael. 
-  3. It has a fixed block size of 128 bits, and a key size of 128, 192, or 256 bits. 
-  4. AES operates on a 4 × 4 column-major order array of bytes, termed the state
-
+1 . Initial Permutation: The plaintext block is rearranged.
+2 . Key Generation: The key is divided into two halves, shifted, and permuted to create 16 subkeys.
+3 . 16 Rounds:
+    Expansion: The right half is expanded.
+    XOR: The expanded right half is XORed with the subkey.
+    Substitution: The result is substituted using S-boxes.
+    Permutation: The substituted result is permuted.
+    Swap: The left and right halves are swapped.
+4 . Final Permutation: The ciphertext is rearranged.
 ## PROGRAM: 
 
 ```
@@ -51,4 +55,4 @@ return 0;
 ![image](https://github.com/user-attachments/assets/a29c756b-49d7-453f-b0f0-f27c21bd12ae)
 
 ## RESULT: 
-Hence,to use Advanced Encryption Standard (AES) Algorithm for a practical application like URL Encryption is done successfully.
+Hence,the DES Encryption and Decryotion is done successfully.
